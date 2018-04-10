@@ -43,11 +43,13 @@ def PosSinWave(amplitude, angle, frequency):
 try: 
 	while 1: 
 		for i in range(0, 720, 5): 
-			colour(PosSinWave(50, i, 0.5), 
-				PosSinWave(50, i, 1), 
-				PosSinWave(50, i, 2), 
-				0.1
-				) 
+			yourvar = int(input('Enter a number: '))
+			if yourvar == 1:
+				colour(PosSinWave(50, i, 0.5), 
+					PosSinWave(50, i, 1), 
+					PosSinWave(50, i, 2), 
+					0.1
+					) 
 
 except KeyboardInterrupt: 
 	pass 
